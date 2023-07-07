@@ -10,7 +10,7 @@
     "fe": "bin/cli.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "dongdongsong",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0",
@@ -21,5 +21,13 @@
     "ora": "^6.3.1",
     "shelljs": "^0.8.5"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songdongdong123/cli-test"
+  },
+  "bugs": {
+    "url": "https://github.com/songdongdong123/cli-test/issues"
+  },
+  "homepage": "https://github.com/songdongdong123/"
 }
