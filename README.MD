@@ -1,10 +1,30 @@
-### 本地执行
-1. clone代码到本地后，在当前跟目录下，执行npm link
-2. 执行fe
-3. 控制台输出 ‘hello ethan-cli‘
+# cra-perfect-react-app
 
-### package.json中bin字段解释
-bin 是一个在 package.json 文件中的属性，用于指定一个或多个可执行文件的路径。当你在全局安装一个包时，这些可执行文件将被添加到系统的 PATH 环境变量中，以便在命令行中直接使用。
+## Installation
 
-### bin/cli.js中的文件头解释
-文件以#!开头代表这个文件被当做一个执行文件来执行，可以当做脚本运行。后面的/usr/bin/env node代表这个文件用node执行，node基于用户安装根目录下的环境变量中查找：
+To install `cra-perfect-react-app`, run the following command:
+
+```bash
+npm install -g cra-perfect-react-app
+```
+
+This will install the package globally on your system, allowing you to use the cra-perfect-react-app command from anywhere.
+
+## Creating a Project
+
+To create a new project using `cra-perfect-react-app`, run the following command:
+```bash
+create-app create my-app --template ts
+```
+This will create a new React project named my-app using the TypeScript template.
+
+## Running the Project
+To run the project, navigate to the project directory and run the following command:
+
+```bash
+cd my-app && yarn start
+```
+
+This will start the development server and open the project in your default web browser.
+
+Feel free to customize this README.md file with additional information about your package as needed.
