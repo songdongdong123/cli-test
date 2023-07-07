@@ -1,4 +1,4 @@
-# cra-perfect-react-app
+# cra-per-react-project
 This is a scaffolding based on create-react-app. On this basis, the following capabilities have been implemented:
 
 1. Providing a unified code standard configuration that automatically formats when saved;
@@ -8,17 +8,17 @@ This is a scaffolding based on create-react-app. On this basis, the following ca
 
 ## Installation
 
-To install `cra-perfect-react-app`, run the following command:
+To install `cra-per-react-project`, run the following command:
 
 ```bash
-npm install -g cra-perfect-react-app
+npm install -g cra-per-react-project
 ```
 
-This will install the package globally on your system, allowing you to use the cra-perfect-react-app command from anywhere.
+This will install the package globally on your system, allowing you to use the cra-per-react-project command from anywhere.
 
 ## Creating a Project
 
-To create a new project using `cra-perfect-react-app`, run the following command:
+To create a new project using `cra-per-react-project`, run the following command:
 ```bash
 create-app create my-app --template ts
 ```
