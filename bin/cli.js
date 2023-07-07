@@ -30,11 +30,20 @@ program.command('create <name>')
       inquirer.prompt(question).then((answers) => {
         console.log(answers);
         if (answers.overwrite !== 'NO') {
+          // console.log(chalk.cyan(`开始清理目录......`));
+          const spinner = ora(`开始清理目录......`).start();
           const result = shell.exec(`rm -rf ./${name}`);
           if (result) {
-            create(name, opt);
+            spinner.succeed(chalk.bgBlue('目录清理完成,开始创建项目..... '))
+            create(name, opt).then(res => {
+              if (res) {
+                // 
+              }
+            }).catch(err => {
+              console.log(chalk.bgRedBright(`资源更新失败，请清楚缓存后重试！！！`));
+            });
           } else {
-            console.log(chalk.bgRed('创建失败！！！！'));
+            spinner.fail(chalk.bgRed('创建失败！！！！'));
           }
         } else {
           console.log(chalk.bgCyan('取消创建！！！！'));
