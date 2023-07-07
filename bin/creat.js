@@ -31,7 +31,7 @@ const create = (name, opt) => {
             spinner.text = chalk.green(`已完成项目配置更新！！！！`);
            // 更新依赖资源
             spinner.text = `开始更新依赖资源...`;
-            const result = shell.exec(`cd ./${name} && yarn install`);
+            const result = shell.exec(`cd ./${name} && yarn install && yarn format`);
             if (result) {
               spinner.succeed('资源更新成功！！！');
               resolve(true)
