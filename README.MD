@@ -6,6 +6,9 @@ This is a scaffolding based on create-react-app. On this basis, the following ca
 3. Creating code snippets for functional components;
 4. Unified git commit standard.
 
+### Environment Requirements
+> node >= v16.20.1
+
 ## Installation
 
 To install `cra-per-react-project`, run the following command:
